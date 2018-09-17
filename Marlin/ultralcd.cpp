@@ -1053,6 +1053,51 @@ void lcd_quick_feedback(const bool clear_buttons) {
     #if defined(USER_DESC_5) && defined(USER_GCODE_5)
       void lcd_user_gcode_5() { _lcd_user_gcode(PSTR(USER_GCODE_5 _DONE_SCRIPT)); }
     #endif
+    #if defined(USER_DESC_6) && defined(USER_GCODE_6)
+      void lcd_user_gcode_6() { _lcd_user_gcode(PSTR(USER_GCODE_6 _DONE_SCRIPT)); }
+    #endif
+    #if defined(USER_DESC_7) && defined(USER_GCODE_7)
+      void lcd_user_gcode_7() { _lcd_user_gcode(PSTR(USER_GCODE_7 _DONE_SCRIPT)); }
+    #endif
+    #if defined(USER_DESC_8) && defined(USER_GCODE_8)
+      void lcd_user_gcode_8() { _lcd_user_gcode(PSTR(USER_GCODE_8 _DONE_SCRIPT)); }
+    #endif
+    #if defined(USER_DESC_9) && defined(USER_GCODE_9)
+      void lcd_user_gcode_9() { _lcd_user_gcode(PSTR(USER_GCODE_9 _DONE_SCRIPT)); }
+    #endif
+    #if defined(USER_DESC_10) && defined(USER_GCODE_10)
+      void lcd_user_gcode_10() { _lcd_user_gcode(PSTR(USER_GCODE_10 _DONE_SCRIPT)); }
+    #endif
+    // #if defined(USER_DESC_11) && defined(USER_GCODE_11)
+    //   void lcd_user_gcode_11() { _lcd_user_gcode(PSTR(USER_GCODE_11 _DONE_SCRIPT)); }
+    // #endif
+    // #if defined(USER_DESC_12) && defined(USER_GCODE_12)
+    //   void lcd_user_gcode_12() { _lcd_user_gcode(PSTR(USER_GCODE_12 _DONE_SCRIPT)); }
+    // #endif
+    // #if defined(USER_DESC_13) && defined(USER_GCODE_13)
+    //   void lcd_user_gcode_13() { _lcd_user_gcode(PSTR(USER_GCODE_13 _DONE_SCRIPT)); }
+    // #endif
+    // #if defined(USER_DESC_14) && defined(USER_GCODE_14)
+    //   void lcd_user_gcode_14() { _lcd_user_gcode(PSTR(USER_GCODE_14 _DONE_SCRIPT)); }
+    // #endif
+    // #if defined(USER_DESC_15) && defined(USER_GCODE_15)
+    //   void lcd_user_gcode_15() { _lcd_user_gcode(PSTR(USER_GCODE_15 _DONE_SCRIPT)); }
+    // #endif
+    // #if defined(USER_DESC_16) && defined(USER_GCODE_16)
+    //   void lcd_user_gcode_16() { _lcd_user_gcode(PSTR(USER_GCODE_16 _DONE_SCRIPT)); }
+    // #endif
+    // #if defined(USER_DESC_17) && defined(USER_GCODE_17)
+    //   void lcd_user_gcode_17() { _lcd_user_gcode(PSTR(USER_GCODE_17 _DONE_SCRIPT)); }
+    // #endif
+    // #if defined(USER_DESC_18) && defined(USER_GCODE_18)
+    //   void lcd_user_gcode_18() { _lcd_user_gcode(PSTR(USER_GCODE_18 _DONE_SCRIPT)); }
+    // #endif
+    // #if defined(USER_DESC_19) && defined(USER_GCODE_19)
+    //   void lcd_user_gcode_19() { _lcd_user_gcode(PSTR(USER_GCODE_19 _DONE_SCRIPT)); }
+    // #endif
+    // #if defined(USER_DESC_20) && defined(USER_GCODE_20)
+    //   void lcd_user_gcode_20() { _lcd_user_gcode(PSTR(USER_GCODE_20 _DONE_SCRIPT)); }
+    // #endif    
 
     void _lcd_user_menu() {
       START_MENU();
@@ -1072,6 +1117,51 @@ void lcd_quick_feedback(const bool clear_buttons) {
       #if defined(USER_DESC_5) && defined(USER_GCODE_5)
         MENU_ITEM(function, USER_DESC_5, lcd_user_gcode_5);
       #endif
+      #if defined(USER_DESC_6) && defined(USER_GCODE_6)
+        MENU_ITEM(function, USER_DESC_6, lcd_user_gcode_6);
+      #endif
+      #if defined(USER_DESC_7) && defined(USER_GCODE_7)
+        MENU_ITEM(function, USER_DESC_7, lcd_user_gcode_7);
+      #endif
+      #if defined(USER_DESC_8) && defined(USER_GCODE_8)
+        MENU_ITEM(function, USER_DESC_8, lcd_user_gcode_8);
+      #endif
+      #if defined(USER_DESC_9) && defined(USER_GCODE_9)
+        MENU_ITEM(function, USER_DESC_9, lcd_user_gcode_9);
+      #endif
+      #if defined(USER_DESC_10) && defined(USER_GCODE_10)
+        MENU_ITEM(function, USER_DESC_10, lcd_user_gcode_10);
+      #endif
+      // #if defined(USER_DESC_11) && defined(USER_GCODE_11)
+      //   MENU_ITEM(function, USER_DESC_11, lcd_user_gcode_11);
+      // #endif
+      // #if defined(USER_DESC_12) && defined(USER_GCODE_12)
+      //   MENU_ITEM(function, USER_DESC_12, lcd_user_gcode_12);
+      // #endif
+      // #if defined(USER_DESC_13) && defined(USER_GCODE_13)
+      //   MENU_ITEM(function, USER_DESC_13, lcd_user_gcode_13);
+      // #endif
+      // #if defined(USER_DESC_14) && defined(USER_GCODE_14)
+      //   MENU_ITEM(function, USER_DESC_14, lcd_user_gcode_14);
+      // #endif
+      // #if defined(USER_DESC_15) && defined(USER_GCODE_15)
+      //   MENU_ITEM(function, USER_DESC_15, lcd_user_gcode_15);
+      // #endif
+      // #if defined(USER_DESC_16) && defined(USER_GCODE_16)
+      //   MENU_ITEM(function, USER_DESC_16, lcd_user_gcode_16);
+      // #endif
+      // #if defined(USER_DESC_17) && defined(USER_GCODE_17)
+      //   MENU_ITEM(function, USER_DESC_17, lcd_user_gcode_17);
+      // #endif
+      // #if defined(USER_DESC_18) && defined(USER_GCODE_18)
+      //   MENU_ITEM(function, USER_DESC_18, lcd_user_gcode_18);
+      // #endif
+      // #if defined(USER_DESC_19) && defined(USER_GCODE_19)
+      //   MENU_ITEM(function, USER_DESC_19, lcd_user_gcode_19);
+      // #endif
+      // #if defined(USER_DESC_20) && defined(USER_GCODE_20)
+      //   MENU_ITEM(function, USER_DESC_20, lcd_user_gcode_20);
+      // #endif      
       END_MENU();
     }
 
