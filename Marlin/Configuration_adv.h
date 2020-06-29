@@ -3160,7 +3160,7 @@
 /**
  * User-defined menu items that execute custom GCode
  */
-//#define CUSTOM_USER_MENUS
+#define CUSTOM_USER_MENUS
 #if ENABLED(CUSTOM_USER_MENUS)
   //#define CUSTOM_USER_MENU_TITLE "Custom Commands"
   #define USER_SCRIPT_DONE "M117 User Script Done"
@@ -3181,6 +3181,16 @@
 
   #define USER_DESC_5 "Home & Info"
   #define USER_GCODE_5 "G28\nM503"
+
+  #define USER_DESC_6 "Move Z to Real 0"
+  #define USER_GCODE_6 "G1 F60 Z0"
+
+  #define USER_DESC_7 "Soft End-Stops: OFF"
+  #define USER_GCODE_7 "M211 S0\nM500\nM501"
+
+  #define USER_DESC_8 "Soft End-Stops: ON"
+  #define USER_GCODE_8 "M211 S1\nM500\nM501"
+
 #endif
 
 /**
