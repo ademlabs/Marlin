@@ -1642,11 +1642,13 @@
 #endif
 
 #if EITHER(MESH_BED_LEVELING, AUTO_BED_LEVELING_UBL)
-  // Override the mesh area if the automatic (max) area is too large
+  // Override the mesh area if the automatic (max) area is too large or small
   //#define MESH_MIN_X MESH_INSET
   //#define MESH_MIN_Y MESH_INSET
-  //#define MESH_MAX_X X_BED_SIZE - (MESH_INSET)
-  //#define MESH_MAX_Y Y_BED_SIZE - (MESH_INSET)
+  #define MESH_MIN_X X_MIN_POS + (MESH_INSET)
+  #define MESH_MIN_Y Y_MIN_POS + (MESH_INSET)
+  #define MESH_MAX_X X_BED_SIZE - (MESH_INSET)
+  #define MESH_MAX_Y Y_BED_SIZE - (MESH_INSET)
 #endif
 
 /**
@@ -3182,7 +3184,7 @@
   #define USER_DESC_5 "Home & Info"
   #define USER_GCODE_5 "G28\nM503"
 
-  #define USER_DESC_6 "Move Z to Real 0"
+  #define USER_DESC_6 "Move Z to current 0"
   #define USER_GCODE_6 "G1 F60 Z0"
 
   #define USER_DESC_7 "Soft End-Stops: OFF"
